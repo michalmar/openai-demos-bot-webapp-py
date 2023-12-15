@@ -1,0 +1,75 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "appId": {
+            "value": "ac36b286-8223-4de9-be18-7670ccc50e04" 
+        },
+        "appPassword": {
+            "value": "Vw28Q~lUWYMEtUAtZwu-tPYD7zx1t2t79l5RMbcs" 
+        },
+      "blobSASToken": {
+        "value": "null"
+      },
+      "resourceGroupSearch": {
+        "value": "[resourceGroup().name]"
+      },
+      "azureSearchName": {
+        "value": "cog-search-cgujapquvrzk6"
+      },
+      "azureSearchAPIVersion": {
+        "value": "2023-07-01-Preview"
+      },
+      "azureOpenAIName": {
+        "value": "openaimmaswe"
+      },
+      "azureOpenAIAPIKey": {
+        "value": "26dc7026436c4e2992abc76c574434b4"
+      },
+      "azureOpenAIModelName": {
+        "value": "gpt-4"
+      },
+      "azureOpenAIAPIVersion": {
+        "value": "2023-05-15"
+      },
+      "bingSearchUrl": {
+        "value": "https://api.bing.microsoft.com/v7.0/search"
+      },
+      "bingSearchName": {
+        "value": "bing-search-cgujapquvrzk6"
+      },
+      "SQLServerName": {
+        "value": "sql-server-cgujapquvrzk6.database.windows.net"
+      },
+      "SQLServerDatabase": {
+        "value": "SampleDB"
+      },
+      "SQLServerUsername": {
+        "value": "mma"
+      },
+      "SQLServerPassword": {
+        "value": "AA_labs_1234"
+      },
+      "cosmosDBAccountName": {
+        "value": "cosmosdb-account-cgujapquvrzk6"
+      },
+      "cosmosDBContainerName": {
+        "value": "cosmosdb-container-cgujapquvrzk6"
+      },
+      "botId": {
+        "value": "[format('BotId-{0}', uniqueString(resourceGroup().id))]"
+      },
+      "botSKU": {
+        "value": "F0"
+      },
+      "appServicePlanName": {
+        "value": "[format('AppServicePlan-Backend-{0}', uniqueString(resourceGroup().id))]"
+      },
+      "appServicePlanSKU": {
+        "value": "S3"
+      },
+      "location": {
+        "value": "[resourceGroup().location]"
+      }
+    }
+  }
